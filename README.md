@@ -48,34 +48,35 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-Required Python packages:
+### 📦 Required Python Packages
 
-Flask
+- Flask  
+- python-dotenv  
+- PyPDF2  
+- python-pptx  
+- python-docx  
+- langchain  
+- sentence-transformers  
+- cohere  
 
-python-dotenv
+---
 
-PyPDF2
+### 🌐 Set Up `.env`
 
-python-pptx
+Create a `.env` file in your root directory and add your Cohere API key like this:
 
-python-docx
-
-langchain
-
-sentence-transformers
-
-cohere
-
-🌐 Set Up .env
-Create a .env file in your root directory:
-
-ini
-Copy
-Edit
+```ini
 cohere_api_key=your_cohere_api_key_here
-▶️ Run the App
-bash
-Copy
-Edit
+```
+### ▶️ Run the App
+
+Start the Flask app by running:
+
+```bash
 python app.py
-Visit http://127.0.0.1:5000 in your browser
+```
+Then open your browser and visit:
+```bash
+http://127.0.0.1:5000
+```
+
