@@ -18,9 +18,9 @@ This is a Flask-based web app that allows you to upload `.pdf`, `.pptx`, or `.do
 
 project-folder/
 │
-├── app.py # Flask server with RAG pipeline
+├──app.py # Flask server with RAG pipeline
 ├── templates/
-│ └── index.html # HTML form for file upload and question input
+│   └── index.html # HTML form for file upload and question input
 ├── uploads/ # Uploaded files get saved here
 ├── .env # Your API key for Cohere
 └── README.md # You're reading this!
