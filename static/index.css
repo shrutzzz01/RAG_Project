@@ -1,0 +1,66 @@
+/* static/index.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+}
+
+h1, h5 {
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+input::file-selector-button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input::file-selector-button:hover {
+    background-color: #0b5ed7;
+}
+
+.alert {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+}
+/* Chat-style response */
+.chat-bubble {
+    background-color: #e2f0ff;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    max-width: 80%;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+}
+
+.chat-bubble::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #e2f0ff;
+}
+
+/* Custom fade in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
